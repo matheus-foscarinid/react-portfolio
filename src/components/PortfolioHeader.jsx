@@ -1,6 +1,9 @@
+import { useEffect, useState } from 'react';
 import './PortfolioHeader.css';
 
 const PortfolioHeader = () => {
+  const [hasScrolled, setHasScrolled] = useState(false);
+
   const tabs = [
     { name: 'Home', id: 'home' },
     { name: 'Sobre', id: 'about' },
@@ -8,10 +11,22 @@ const PortfolioHeader = () => {
     { name: 'Contato', id: 'contact' },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 25);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
-      <div class="logo">
-        <h2>matheusdias<span class="dev">.dev</span></h2>
+    <header className={hasScrolled ? 'scrolled' : ''}>
+      <div className="logo">
+        <h2>matheusdias<span className="dev">.dev</span></h2>
       </div>
 
       <div className="tabs">

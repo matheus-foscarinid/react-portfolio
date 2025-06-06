@@ -1,11 +1,16 @@
 header {
   position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  height: 5rem;
+  height: 4rem;
   color: var(--default-text);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled {
   background-color: var(--secondary-background);
   box-shadow: var(--default-shadow);
 }
