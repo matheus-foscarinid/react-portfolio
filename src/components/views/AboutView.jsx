@@ -2,21 +2,22 @@ import './AboutView.css'
 
 const AboutView = () => {
   const STACK = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'Vue',
-    'Node.js',
-    'Ruby on Rails',
-    'Python',
-    'SQL',
-    'MongoDB',
-    'Git',
-    'Docker',
-    'GraphQL'
-  ]
+  { name: 'HTML', color: '#e34c26' },
+  { name: 'CSS', color: '#264de4' },
+  { name: 'JavaScript', color: '#f7df1e' },
+  { name: 'TypeScript', color: '#3178c6' },
+  { name: 'React', color: '#61dafb' },
+  { name: 'Vue', color: '#42b883' },
+  { name: 'Node.js', color: '#68a063' },
+  { name: 'Ruby on Rails', color: '#cc0000' },
+  { name: 'Python', color: '#3776ab' },
+  { name: 'SQL', color: '#00758f' },
+  { name: 'MongoDB', color: '#47a248' },
+  { name: 'Git', color: '#f34f29' },
+  { name: 'Docker', color: '#2496ed' },
+  { name: 'GraphQL', color: '#e535ab' },
+  { name: 'PHP', color: '#4f5d95' },
+]
 
   return (
     <section id="about">
@@ -29,8 +30,12 @@ const AboutView = () => {
 
         <div className="stack">
           <div className="badges">
-            {STACK.map((item, index) => (
-              <span key={index} className="stack-item">{item}</span>
+            {STACK.map((item) => (
+              <span 
+                key={item.name} 
+                style={{ backgroundColor: item.color }}
+                className="badge"
+              >{item.name}</span>
             ))}
           </div>
         </div>
