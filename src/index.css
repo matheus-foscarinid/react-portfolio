@@ -1,0 +1,56 @@
+:root {
+  /* Cores de fundo */
+  --default-background: #1A1A1A;
+  --secondary-background: #202020;
+  --details-background: #2C2C2C;
+  --dark-background: #000000;
+
+  /* Cores de texto */
+  --default-text: #FFFFFF;
+  --secondary-text: #c8c8c8;
+  --disabled-text: #707070;
+
+  /* Cores complementares */
+  --default-border: #454545;
+
+  /* Sombras */
+  --default-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html{scroll-behavior:smooth}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--default-background);
+  color: var(--text-default);
+  scroll-behavior: smooth;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 8rem auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container { 
+    padding: 0 1.2rem !important; 
+    margin: 2rem auto;
+  }
+}
