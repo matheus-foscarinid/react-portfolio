@@ -5,7 +5,6 @@ import PortfolioFooter from './components/PortfolioFooter'
 // Views
 import HomeView from './components/views/HomeView'
 import AboutView from './components/views/AboutView'
-import CareerView from './components/views/CareerView'
 import ProjectsView from './components/views/ProjectsView'
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
 
         <HomeView />
         <AboutView />
-        <CareerView />
         <ProjectsView />
 
         <PortfolioFooter />
