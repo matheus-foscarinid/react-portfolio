@@ -1,0 +1,54 @@
+#about {
+  background-color: var(--secondary-background);
+}
+
+#about .container {
+  padding: 4rem;
+  display: flex;
+  gap: 2rem;
+  color: var(--default-text);
+}
+
+#about h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#about h2 .detail {
+  margin-right: .25rem;
+  font-weight: 400;
+  color: var(--secondary-text);
+}
+
+#about .container .texts {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  flex: 3;
+}
+
+#about .container .stack {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .container .badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+#about .stack-item {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: var(--details-background);
+  color: var(--default-text);
+  border: 1px solid var(--details-border);
+  font-size: .875rem;
+  font-weight: 800;
+}
