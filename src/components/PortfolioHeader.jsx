@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import MenuIcon from '../icons/MenuIcon'
 import './PortfolioHeader.css';
 
 const PortfolioHeader = () => {
@@ -10,6 +11,14 @@ const PortfolioHeader = () => {
     { name: 'Projetos', id: 'projects' },
     { name: 'Contato', id: 'contact' },
   ];
+
+  const isMobile = () => {
+    return window.innerWidth <= 768;
+  };
+
+  const showMenu = () => {
+    console.log('Menu icon clicked');
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +35,7 @@ const PortfolioHeader = () => {
   return (
     <header className={hasScrolled ? 'scrolled' : ''}>
       <div className="logo">
-        <h2>matheusdias<span className="dev">.dev</span></h2>
+        <h2>matheus-foscarinid<span className="dev">.dev</span></h2>
       </div>
 
       <div className="tabs">
@@ -38,6 +47,12 @@ const PortfolioHeader = () => {
           )
         }))}
       </div>
+
+      {isMobile() && (
+        <div className="menu-icon" onClick={showMenu}>
+          <MenuIcon />
+        </div>
+      )}
     </header>
   )
 }

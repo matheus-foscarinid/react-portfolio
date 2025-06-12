@@ -45,6 +45,22 @@ header.scrolled {
   text-decoration: underline;
 }
 
+.menu-icon {
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  color: var(--default-text);
+  cursor: pointer;
+}
+
+.menu-icon svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--default-text);
+  transition: fill 0.25s ease-in-out;
+}
+
 /* Layout mobile */
 @media (max-width: 768px) {
   header {

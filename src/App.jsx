@@ -1,4 +1,3 @@
-import './App.css'
 // Components
 import PortfolioHeader from './components/PortfolioHeader'
 import PortfolioFooter from './components/PortfolioFooter'
@@ -6,6 +5,7 @@ import PortfolioFooter from './components/PortfolioFooter'
 import HomeView from './components/views/HomeView'
 import AboutView from './components/views/AboutView'
 import ProjectsView from './components/views/ProjectsView'
+import ContactsView from './components/views/ContactsView'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <HomeView />
         <AboutView />
         <ProjectsView />
+        <ContactsView />
 
         <PortfolioFooter />
       </div>

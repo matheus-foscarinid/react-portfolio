@@ -1,6 +1,6 @@
 #home {
   min-height: 100vh;
-  /* Negative margin because we have a stick header :) */
+  /* Margem negativa pelo header ser sticky :) */
   margin-top: -5rem;
   display: flex;
   align-items: center;
@@ -102,6 +102,7 @@
   #home .container {
     flex-direction: column;
     align-items: center;
+    margin-top: 5rem;
   }
 
   .home-view {

@@ -10,7 +10,7 @@ const HomeView = () => {
     const SUBJECTS = {
       github: 'https://github.com/matheus-foscarinid',
       linkedin: 'https://www.linkedin.com/in/matheus-foscarinid/',
-      resume: 'https://www.matheusdias.dev/dias-matheus-cv.pdf'
+      resume: '/dias-matheus-cv.pdf'
     }
 
     const url = SUBJECTS[subject];

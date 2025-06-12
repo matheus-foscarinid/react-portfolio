@@ -41,6 +41,7 @@
 
 #about .container .badges {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
@@ -63,6 +64,7 @@
   cursor: pointer;
 }
 
+/* Layout mobile */
 @media only screen and (max-width: 768px) {
   #about .container {
     flex-direction: column;
